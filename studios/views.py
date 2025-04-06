@@ -21,7 +21,7 @@ def nearest_std(request):
     except (TypeError, ValueError):
         return Response({'error': 'Check latitude and longitude values.'}, status=400)
 
-    SerpApiKey = "4aa1696e8aa4421b04536616e86e6c004c561dbb907103d8275c445d86ec485e"
+    SerpApiKey = "" # use serp api key , key is available in readme
     url = "https://serpapi.com/search.json"
 
     params = {
